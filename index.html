@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+
+<body>
+
+
+
+    <div class="container py-5">
+
+        <div class="form-group">
+            <label>productName :</label>
+            <input id="productNameInp" type="text" class="my-1 form-control">
+        </div>
+
+
+
+        <div class="form-group">
+            <label>productPrice :</label>
+            <input id="productPriceInp" type="text" class="my-1 form-control">
+        </div>
+
+
+
+        <div class="form-group">
+            <label>productCategory :</label>
+            <input id="productCategoryInp" type="text" class="my-1 form-control">
+        </div>
+
+
+
+        <div class="form-group">
+            <label>productDesc :</label>
+            <textarea id="productDescInp" type="text" class="my-1 form-control">
+                </textarea>
+
+        </div>
+
+        <button onclick="addProduct()" id="addBtn" class="btn btn-info">add product</button>
+    </div>
+
+
+    <div class="container">
+        
+        
+
+        <div class="w-50 m-auto py-3">
+
+        <input onkeyup="searchProducts(this.value)" placeholder="search" class="form-control">
+            
+        </div>
+          
+
+
+        <table class="table text-center w-75 m-auto">
+            <thead>
+                <th>index </th>
+                <th>ProductName </th>
+                <th>ProductPrice </th>
+                <th>ProductCategory </th>
+                <th>ProductDesc </th>
+                <th>update </th>
+                <th>delete </th>
+
+            </thead>
+            <tbody id="tableBody">
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
